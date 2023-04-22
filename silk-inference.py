@@ -30,15 +30,9 @@ def main():
     
     sparse_positions_0 = from_feature_coords_to_image_coords(model, sparse_positions_0)
     sparse_positions_1 = from_feature_coords_to_image_coords(model, sparse_positions_1)
-
-    print(f"image 0: {sparse_positions_0[0].shape[0]} keypoints")
-    print(f"image 1: {sparse_positions_1[0].shape[0]} keypoints")
-
-    print(sparse_positions_0)
+    
     # get matches
     matches = SILK_MATCHER(sparse_descriptors_0[0], sparse_descriptors_1[0])
-
-    print(matches.shape)
 
     # create output image
     image_pair = create_img_pair_visual(
