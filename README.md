@@ -20,10 +20,15 @@ conda env create -f environment.yml
 conda activate silk
 ```
 
-
 ## Inference
 
-An example of using SiLK for inference is provided in `./scripts/examples/silk-inference.py`. The pre-trained models and inference parameters are specified in `./scripts/examples/common.py`.
+An example of using SiLK for inference is provided in `silk-inference.py`. The pre-trained models and inference parameters are specified in `common.py`.
+
+This can be run with:
+```bash
+python silk-inference.py
+```
+
 
 A very important parameter is the `SILK_DEFAULT_OUTPUT`. It specifies the output(s) that is required from the model. When running the model, it will output a tuple of the same size as `SILK_DEFAULT_OUTPUT`, with the corresponding output at each position.
 
