@@ -11,7 +11,7 @@ import numpy as np
 import skimage.io as io
 import torch
 
-import torchvision
+#import torchvision
 from silk.backbones.silk.silk import SiLKVGG as SiLK
 from silk.backbones.superpoint.vgg import ParametricVGG
 
