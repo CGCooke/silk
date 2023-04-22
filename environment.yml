@@ -1,0 +1,15 @@
+name: silk
+channels:
+    - conda-forge
+    - pytorch-nightly
+dependencies:
+  - pytorch
+  - torchvision
+  - scikit-image
+  - matplotlib
+  - jax
+  - hydra-core
+  - opencv
+  - pytorch-lightning==1.5.2
+  - loguru
+  
