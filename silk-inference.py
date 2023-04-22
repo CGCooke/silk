@@ -13,7 +13,7 @@ from silk.cli.image_pair_visualization import create_img_pair_visual, save_image
 
 IMAGE_0_PATH = "assets/datasets/1.ppm"
 IMAGE_1_PATH = "assets/datasets/2.ppm"
-OUTPUT_IMAGE_PATH = "./img.png"
+OUTPUT_IMAGE_PATH = "./matches.png"
 
 
 def main():

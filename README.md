@@ -29,6 +29,10 @@ This can be run with:
 python silk-inference.py
 ```
 
+The output will be output to `matches.png`.
+
+![An demo of matching.](matches.png)
+
 
 A very important parameter is the `SILK_DEFAULT_OUTPUT`. It specifies the output(s) that is required from the model. When running the model, it will output a tuple of the same size as `SILK_DEFAULT_OUTPUT`, with the corresponding output at each position.
 
